@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "allTogether_backend": {
+      "main": "src/allTogether_backend/main.mo",
+      "type": "motoko"
+    },
+    "allTogether_frontend": {
+      "dependencies": [
+        "allTogether_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/allTogether_frontend/src/index.html"
+      },
+      "source": [
+        "src/allTogether_frontend/assets",
+        "dist/allTogether_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
